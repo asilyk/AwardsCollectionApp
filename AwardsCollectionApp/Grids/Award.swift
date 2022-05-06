@@ -7,30 +7,30 @@
 
 import SwiftUI
 
-struct Aword {
+struct Award {
     
     let awardView: AnyView
     let title: String
     let awarded: Bool
     
-    static func getAwards() -> [Aword] {
+    static func getAwards() -> [Award] {
         [
-            Aword(
+            Award(
                 awardView: AnyView(GradientRectangles().frame(width: 160, height: 160)),
                 title: "Gradient Rectangles",
                 awarded: true
             ),
-            Aword(
+            Award(
                 awardView: AnyView(PathView().frame(width: 160, height: 160)),
                 title: "Path View",
                 awarded: true
             ),
-            Aword(
+            Award(
                 awardView: AnyView(CurvesView().frame(width: 160, height: 160)),
                 title: "Curves View",
                 awarded: true
             ),
-            Aword(
+            Award(
                 awardView: AnyView(HypocycloidView(width: 160, height: 160)),
                 title: "Hypocycloid View",
                 awarded: false

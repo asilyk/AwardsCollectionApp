@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06F8906D27D6753B00848B92 /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8906C27D6753B00848B92 /* CustomGridView.swift */; };
-		06F8906F27D67DFA00848B92 /* Aword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8906E27D67DFA00848B92 /* Aword.swift */; };
+		06F8906F27D67DFA00848B92 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8906E27D67DFA00848B92 /* Award.swift */; };
 		06F8907127D6811100848B92 /* VerticalGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8907027D6811100848B92 /* VerticalGridView.swift */; };
 		06F8907327D6834600848B92 /* HorizontalGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8907227D6834600848B92 /* HorizontalGridView.swift */; };
 		A837BA4F2744E41800EB05B3 /* HypocycloidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837BA4E2744E41800EB05B3 /* HypocycloidView.swift */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		06F8906C27D6753B00848B92 /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
-		06F8906E27D67DFA00848B92 /* Aword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aword.swift; sourceTree = "<group>"; };
+		06F8906E27D67DFA00848B92 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		06F8907027D6811100848B92 /* VerticalGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalGridView.swift; sourceTree = "<group>"; };
 		06F8907227D6834600848B92 /* HorizontalGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGridView.swift; sourceTree = "<group>"; };
 		A837BA4E2744E41800EB05B3 /* HypocycloidView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypocycloidView.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				06F8906C27D6753B00848B92 /* CustomGridView.swift */,
-				06F8906E27D67DFA00848B92 /* Aword.swift */,
+				06F8906E27D67DFA00848B92 /* Award.swift */,
 				06F8907027D6811100848B92 /* VerticalGridView.swift */,
 				06F8907227D6834600848B92 /* HorizontalGridView.swift */,
 			);
@@ -214,7 +214,7 @@
 				A837BA4F2744E41800EB05B3 /* HypocycloidView.swift in Sources */,
 				A89D0933267B76D400C1FB66 /* MainView.swift in Sources */,
 				06F8907127D6811100848B92 /* VerticalGridView.swift in Sources */,
-				06F8906F27D67DFA00848B92 /* Aword.swift in Sources */,
+				06F8906F27D67DFA00848B92 /* Award.swift in Sources */,
 				A8E1B485267B7979005E98AA /* PathView.swift in Sources */,
 				A89D0931267B76D400C1FB66 /* AwardsCollectionApp.swift in Sources */,
 				A89D0940267B777E00C1FB66 /* StarterView.swift in Sources */,

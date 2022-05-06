@@ -28,9 +28,9 @@ import SwiftUI
 //}
 
 struct AwardsView: View {
-    let awards = Aword.getAwards()
+    let awards = Award.getAwards()
     let columns = [GridItem(.adaptive(minimum: 160, maximum: 200))]
-    var activeAwards: [Aword] {
+    var activeAwards: [Award] {
         awards.filter { $0.awarded }
     }
     
@@ -45,7 +45,7 @@ struct AwardsView: View {
                         }
                     }
                 }
-            }.navigationTitle("Your awords: \(activeAwards.count)")
+            }.navigationTitle("Your awards: \(activeAwards.count)")
         }
     }
 }
