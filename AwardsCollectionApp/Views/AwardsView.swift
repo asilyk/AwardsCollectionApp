@@ -16,12 +16,14 @@ struct AwardsView: View {
 
     var body: some View {
         NavigationView {
-            CustomGridView(columns: 2, items: activeAwards) { award in
+            CustomGridView(columns: 2, items: activeAwards) { itemSize, award in
                 VStack {
                     award.awardView
+                        .frame(width: 0.7 * itemSize, height: 0.7 * itemSize)
                     Text(award.title)
                 }
                 .padding()
+                .frame(width: itemSize, height: itemSize)
             }
             .navigationBarTitle("Your awards: \(activeAwards.count)")
         }

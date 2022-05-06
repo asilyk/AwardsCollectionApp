@@ -16,17 +16,17 @@ struct Award {
     static func getAwards() -> [Award] {
         [
             Award(
-                awardView: AnyView(GradientRectangles().frame(width: 160, height: 160)),
+                awardView: AnyView(GradientRectangles()),
                 title: "Gradient Rectangles",
                 awarded: true
             ),
             Award(
-                awardView: AnyView(PathView().frame(width: 160, height: 160)),
+                awardView: AnyView(PathView()),
                 title: "Path View",
                 awarded: true
             ),
             Award(
-                awardView: AnyView(CurvesView().frame(width: 160, height: 160)),
+                awardView: AnyView(CurvesView()),
                 title: "Curves View",
                 awarded: true
             ),
@@ -36,7 +36,7 @@ struct Award {
                 awarded: false
             ),
             Award(
-                awardView: AnyView(RocketView().frame(width: 160, height: 160)),
+                awardView: AnyView(RocketView()),
                 title: "Rocket View",
                 awarded: true
             )
