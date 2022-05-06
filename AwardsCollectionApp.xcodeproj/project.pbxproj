@@ -12,7 +12,7 @@
 		06F8907127D6811100848B92 /* VerticalGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8907027D6811100848B92 /* VerticalGridView.swift */; };
 		06F8907327D6834600848B92 /* HorizontalGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F8907227D6834600848B92 /* HorizontalGridView.swift */; };
 		A837BA4F2744E41800EB05B3 /* HypocycloidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837BA4E2744E41800EB05B3 /* HypocycloidView.swift */; };
-		A89D0931267B76D400C1FB66 /* AwardsCollectionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D0930267B76D400C1FB66 /* AwardsCollectionAppApp.swift */; };
+		A89D0931267B76D400C1FB66 /* AwardsCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D0930267B76D400C1FB66 /* AwardsCollectionApp.swift */; };
 		A89D0933267B76D400C1FB66 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D0932267B76D400C1FB66 /* MainView.swift */; };
 		A89D0935267B76D600C1FB66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89D0934267B76D600C1FB66 /* Assets.xcassets */; };
 		A89D0938267B76D600C1FB66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89D0937267B76D600C1FB66 /* Preview Assets.xcassets */; };
@@ -30,7 +30,7 @@
 		06F8907227D6834600848B92 /* HorizontalGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGridView.swift; sourceTree = "<group>"; };
 		A837BA4E2744E41800EB05B3 /* HypocycloidView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypocycloidView.swift; sourceTree = "<group>"; };
 		A89D092D267B76D400C1FB66 /* AwardsCollectionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwardsCollectionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A89D0930267B76D400C1FB66 /* AwardsCollectionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsCollectionAppApp.swift; sourceTree = "<group>"; };
+		A89D0930267B76D400C1FB66 /* AwardsCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsCollectionApp.swift; sourceTree = "<group>"; };
 		A89D0932267B76D400C1FB66 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A89D0934267B76D600C1FB66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A89D0937267B76D600C1FB66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -64,6 +64,33 @@
 			path = Grids;
 			sourceTree = "<group>";
 		};
+		11A70CF22825438C00AB5B3B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A89D0930267B76D400C1FB66 /* AwardsCollectionApp.swift */,
+				A89D0939267B76D600C1FB66 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		11A70CF3282543A200AB5B3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A89D093F267B777E00C1FB66 /* StarterView.swift */,
+				A89D0932267B76D400C1FB66 /* MainView.swift */,
+				A89D0941267B77C800C1FB66 /* AwardsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11A70CF4282543B800AB5B3B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A89D0934267B76D600C1FB66 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A837BA502745035A00EB05B3 /* Awards */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,14 +121,11 @@
 		A89D092F267B76D400C1FB66 /* AwardsCollectionApp */ = {
 			isa = PBXGroup;
 			children = (
-				A89D0930267B76D400C1FB66 /* AwardsCollectionAppApp.swift */,
-				A89D093F267B777E00C1FB66 /* StarterView.swift */,
-				A89D0932267B76D400C1FB66 /* MainView.swift */,
-				A89D0941267B77C800C1FB66 /* AwardsView.swift */,
+				11A70CF22825438C00AB5B3B /* App */,
+				11A70CF3282543A200AB5B3B /* Views */,
 				A837BA502745035A00EB05B3 /* Awards */,
 				06821A7427D65B510008215C /* Grids */,
-				A89D0934267B76D600C1FB66 /* Assets.xcassets */,
-				A89D0939267B76D600C1FB66 /* Info.plist */,
+				11A70CF4282543B800AB5B3B /* Resources */,
 				A89D0936267B76D600C1FB66 /* Preview Content */,
 			);
 			path = AwardsCollectionApp;
@@ -192,7 +216,7 @@
 				06F8907127D6811100848B92 /* VerticalGridView.swift in Sources */,
 				06F8906F27D67DFA00848B92 /* Aword.swift in Sources */,
 				A8E1B485267B7979005E98AA /* PathView.swift in Sources */,
-				A89D0931267B76D400C1FB66 /* AwardsCollectionAppApp.swift in Sources */,
+				A89D0931267B76D400C1FB66 /* AwardsCollectionApp.swift in Sources */,
 				A89D0940267B777E00C1FB66 /* StarterView.swift in Sources */,
 				06F8907327D6834600848B92 /* HorizontalGridView.swift in Sources */,
 				A8E1B483267B7972005E98AA /* GradientRectangles.swift in Sources */,
@@ -325,18 +349,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AwardsCollectionApp/Preview Content\"";
-				DEVELOPMENT_TEAM = GBTTU32HS2;
+				DEVELOPMENT_TEAM = Z7DXS499R9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AwardsCollectionApp/Info.plist;
+				INFOPLIST_FILE = AwardsCollectionApp/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.AwardsCollectionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = AlexanderIlyk.AwardsCollectionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,18 +371,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AwardsCollectionApp/Preview Content\"";
-				DEVELOPMENT_TEAM = GBTTU32HS2;
+				DEVELOPMENT_TEAM = Z7DXS499R9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AwardsCollectionApp/Info.plist;
+				INFOPLIST_FILE = AwardsCollectionApp/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.AwardsCollectionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = AlexanderIlyk.AwardsCollectionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
