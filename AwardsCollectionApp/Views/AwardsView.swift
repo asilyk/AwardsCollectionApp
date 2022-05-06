@@ -6,51 +6,53 @@
 //
 
 import SwiftUI
-//
-//struct AwardsView: View {
-//    let awards = Aword.getAwards()
-//
-//    var activeAwards: [Aword] {
-//        awards.filter { $0.awarded }
-//    }
-//    var body: some View {
-//        NavigationView {
-//            CustomGridView(columns: 2, items: activeAwards) { award in
-//                VStack {
-//                    award.awardView
-//                    Text(award.title)
-//                }
-//                .padding()
-//            }
-//            .navigationBarTitle("Awards")
-//        }
-//    }
-//}
 
 struct AwardsView: View {
     let awards = Award.getAwards()
-    let columns = [GridItem(.adaptive(minimum: 160, maximum: 200))]
+
     var activeAwards: [Award] {
         awards.filter { $0.awarded }
     }
-    
+
     var body: some View {
         NavigationView {
-            ScrollView {
-                LazyVGrid(columns: columns) {
-                    ForEach(activeAwards, id: \.title) { award in
-                        VStack {
-                            award.awardView
-                            Text(award.title)
-                        }
-                    }
+            CustomGridView(columns: 2, items: activeAwards) { award in
+                VStack {
+                    award.awardView
+                    Text(award.title)
                 }
+                .padding()
             }
-            .navigationTitle("Your awards: \(activeAwards.count)")
+            .navigationBarTitle("Your awards: \(activeAwards.count)")
         }
         .navigationViewStyle(.stack)
     }
 }
+
+//struct AwardsView: View {
+//    let awards = Award.getAwards()
+//    let columns = [GridItem(.adaptive(minimum: 160, maximum: 200))]
+//    var activeAwards: [Award] {
+//        awards.filter { $0.awarded }
+//    }
+//
+//    var body: some View {
+//        NavigationView {
+//            ScrollView {
+//                LazyVGrid(columns: columns) {
+//                    ForEach(activeAwards, id: \.title) { award in
+//                        VStack {
+//                            award.awardView
+//                            Text(award.title)
+//                        }
+//                    }
+//                }
+//            }
+//            .navigationTitle("Your awards: \(activeAwards.count)")
+//        }
+//        .navigationViewStyle(.stack)
+//    }
+//}
 
 struct AwardsView_Previews: PreviewProvider {
     static var previews: some View {
