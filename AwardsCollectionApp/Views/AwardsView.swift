@@ -45,8 +45,10 @@ struct AwardsView: View {
                         }
                     }
                 }
-            }.navigationTitle("Your awards: \(activeAwards.count)")
+            }
+            .navigationTitle("Your awards: \(activeAwards.count)")
         }
+        .navigationViewStyle(.stack)
     }
 }
 
