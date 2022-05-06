@@ -34,6 +34,11 @@ struct Award {
                 awardView: AnyView(HypocycloidView(width: 160, height: 160)),
                 title: "Hypocycloid View",
                 awarded: false
+            ),
+            Award(
+                awardView: AnyView(RocketView().frame(width: 160, height: 160)),
+                title: "Rocket View",
+                awarded: true
             )
         ]
     }
