@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct HorizontalGridView: View {
-    
     let data = 1...10
     let rows = [
         GridItem(.fixed(20))
     ]
-    
+
     var body: some View {
         ScrollView {
             LazyHGrid(rows: rows) {

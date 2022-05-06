@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showAward = false
-    
+
     var body: some View {
         VStack {
             Button(action: buttonAction) {
@@ -21,7 +21,7 @@ struct MainView: View {
                         .rotationEffect(.degrees(showAward ? 0 : 180))
                 }
             }
-            
+
             Spacer()
             if showAward {
                 GradientRectangles()
@@ -33,7 +33,7 @@ struct MainView: View {
         .font(.headline)
         .padding()
     }
-    
+
     private func buttonAction() {
         withAnimation {
             showAward.toggle()

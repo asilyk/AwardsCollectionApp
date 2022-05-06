@@ -13,7 +13,7 @@ struct GradientRectangles: View {
         GeometryReader { geometry in
             let width = geometry.size.width
             let height = geometry.size.height
-            
+
             ZStack {
                 ForEach(0..<3) { iteration in
                     Rectangle()

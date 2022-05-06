@@ -17,7 +17,7 @@ struct CurvesView: View {
             let nearLine = size * 0.1
             let farLine = size * 0.9
             let middle = size / 2
-            
+
             Path { path in
                 path.move(to: CGPoint(x: middle, y: nearLine))
                 path.addQuadCurve(

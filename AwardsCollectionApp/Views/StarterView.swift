@@ -15,7 +15,7 @@ struct StarterView: View {
                     Image(systemName: "rosette")
                     Text("Main")
                 }
-            
+
             AwardsView()
                 .tabItem {
                     Image(systemName: "pencil.and.outline")
